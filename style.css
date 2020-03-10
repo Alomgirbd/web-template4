@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    background-color: #fff;
+   
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.justify-center{
+    justify-content: center;
+}
+
+#home-slider{
+    position: relative;
+}
+.carousel-item{
+    height: 725px;
+}
+.carousel-item .caption{
+    padding: 200px 50px;
+}
+.caption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.7);
+}
+.caption h1{
+    margin-top: 20px;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.caption p{
+    margin-top: 30px;
+    color: rgb(228, 214, 214);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 100;
+}
+.caption span{
+    color: blueviolet;
+}
+.caption a{
+    margin: 50px auto;
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0.5px solid rgb(204, 186, 186);
+    color: white;
+    border-radius: 5px 5px;
+    text-align: center;
+    line-height: 50px;
+}
+.caption a:hover{
+    background-color: rgb(90, 90, 223);
+}
+.carousel-control-prev ,.carousel-control-next{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border: 1px solid white;
+    line-height: 50px;
+    border-radius: 50%;
+    top: 350px;
+    z-index: 20;
+}
+.carousel-control-prev{
+    margin-left: -50px;
+}
+.carousel-control-next{
+    margin-right: -50px;
+}
+#home-slider:hover .carousel-control-prev{
+    margin-left: 30px;
+    transition: .5s;
+}
+#home-slider:hover .carousel-control-next{
+    margin-right: 30px;
+    transition: .5s;
+}
+
+.down-arrow i{
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  width: 24px;
+  font-size: 40px;
+  line-height: 24px;
+  left: 49%;
+  bottom: 70px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+.menu-area{
+    padding: 10px 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(115, 115, 214);
+
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+.menu-item{
+    color: white;
+    font-size: 15px;
+    display: block;
+    padding:20px 10px;
+    text-transform: uppercase;
+}
+.menu-item:hover{
+    color: rgb(223, 205, 205);
+    cursor: pointer;
+    text-decoration: none;
+}
+.navar{
+    padding: 0;
+}
+.navbar-nav{
+    margin-top: 0;
+    padding: 0px 5px;
+}
+.navbar-nav .active{
+    background-color: rgb(58, 33, 58);
+    
+}
+/* service area */
+.service-area{
+    padding: 50px 0;
+}
+.section-title{
+    padding: 40px 0;
+}
+.section-title h2{
+    color: black;
+    font-weight: 700;
+}
+.section-title p{
+    font-size: 15px;
+}
+.single-service{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(241, 232, 232);
+    border-right:1px solid rgb(241, 232, 232);
+}
+.service-icon{
+    margin: 20px auto;
+    height: 90px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: rgb(160, 98, 219);
+}
+.service-icon i{
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    color:white;
+    line-height: 80px;
+}
+.single-service:hover .service-icon{
+    background-color: rgb(46, 14, 73);
+}
+.single-service:nth-child(3n+0){
+    border-right:none;
+}
+.single-service:nth-child(4),.single-service:nth-child(5),.single-service:nth-child(6){
+    border-bottom:none;
+}
+/* about area */
+.about-area{
+    background: url(img/about-bg.jpg) no-repeat center center/cover fixed;
+   
+    padding: 60px 0;
+}
+.about-content h2,.about-content p{
+    color: white;
+}
+.about-skill h6{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+/* portfolio area */
+.portfolio-area{
+    padding: 50px 0;
+}
+.single-portfolio{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-overlay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    
+}
+.portfolio-overlay h4{
+    margin-top: 80px;
+    color: white;
+}
+.portfolio-overlay p{
+    color: white;
+    font-size: 18px;
+}
+.icon-left,.icon-right{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    float: left;
+    margin: 20px 10px;
+    
+}
+
+.icon-left i,.icon-right i{
+    font-size: 20px;
+    color: blue;
+}
+.single-portfolio:hover .portfolio-overlay{
+    display: block;
+   
+}
+/* team area */
+.team-area{
+    padding: 50px 0;
+}
+.single-team img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.team-content h4,.team-content p{
+    color: black;
+}
+.team-social-link i{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: rgb(217, 217, 233);
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+}
+.team-social-link i:hover{
+    background-color: rgb(50, 126, 177);
+    color: rgb(61, 40, 40);
+    transition: .2s;
+}
+/* feature area */
+.feature-area{
+    background: url(img/features-bg.jpg) no-repeat center center / cover fixed;
+    height: 350px;
+    padding: 50px 0;
+}
+.single-feature{
+    padding: 60px 0;
+}
+.single-feature h2,.single-feature h5{
+    color: white;
+}
+.feature-icon{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.single-price{
+    width: 100%;
+    height: 350px;
+    line-height: 5px;
+    margin: 20px 0;
+    
+}
+.price-box{
+    padding: 20px;
+    border: 1px solid rgb(128, 212, 245);
+}
+.single-price a{
+    padding: 20px 30px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+.single-price h4{
+    color: black;
+    font-size: 25px;
+}
+.single-price h5 span{
+    font-size: 40px;
+}
+.single-price h6{
+    padding: 6px 0;
+}
+.single-price a:hover{
+    background-color: rgb(38, 38, 134);
+    color: white;
+}
+.single-price:hover .price-box{
+    background-color: rgb(183, 135, 228);
+    color: white;
+}
+/* footer area */
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(116, 96, 228);
+}
+footer p{
+    font-size: 20px;
+    padding: 12px;
+    color: white;
+}
