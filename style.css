@@ -333,6 +333,11 @@ img{
     background-color: rgb(183, 135, 228);
     color: white;
 }
+/* contact area */
+#contact{
+    padding: 40px 0;
+    background-color: rgb(160, 209, 204);
+}
 /* footer area */
 footer{
     width: 100%;
